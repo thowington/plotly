@@ -1,0 +1,21 @@
+---
+title: "ploty_exercise"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## CEO Salary versus Return on Equity
+October 14, 2018
+
+```{r echo = FALSE}
+suppressMessages(library(plotly))
+
+ceo_sal <- read.csv("H:/developing_data_products/ceo_sal.csv")
+colnames(ceo_sal)[1] = "salary"
+
+plot_ly(x=~salary, y=~roe, data = ceo_sal, type = 'scatter', mode = 'markers')
+```
+
