@@ -1,5 +1,5 @@
 ---
-title: "ploty_exercise"
+title: "plotly_exercise"
 output: html_document
 ---
 
